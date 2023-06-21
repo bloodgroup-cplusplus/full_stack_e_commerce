@@ -11,5 +11,5 @@ interface Props {
 }
 
 export function Providers({ children }: Props) {
-  return <>{children}</>
+  return <CartProvider>{children}</CartProvider>
 }

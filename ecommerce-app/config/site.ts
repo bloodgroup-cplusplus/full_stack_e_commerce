@@ -1,8 +1,8 @@
 export type SiteConfig = typeof siteConfig
 
 export const siteConfig = {
-  name: "Name",
-  description: "Description",
+  name: "Suvidha Gangtok",
+  description: "The best medical facility delivery in Gangtok",
   footer: [
     { name: "Home", href: "/" },
     { name: "About", href: "#" },
