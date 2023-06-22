@@ -38,6 +38,29 @@ export const product = {
             title:"Colors",
             type:"array",
             of:[{type:"string"}]
+        },
+
+        {
+            name:"description",
+            title:"Description",
+            type:"string"
+            
+        },
+        {
+            name:"sku",
+            title:"SKU",
+            type:"string"
+        },
+        {
+            name:"currency",
+            title:"Currency",
+            type:"string"
+        },
+
+        {
+            name:"price",
+            title:"Price",
+            type:"number",
         }
     ]
 
