@@ -17,9 +17,9 @@ interface Props {
 }
 
 export default async function Page({searchParams}:Props) {
-  const {date="desc",price,} = searchParams
-  const priceOrder = price? `| order(price${price})`:""
-  const dateOrder =date?  `| order(_createdAt${date})`:""
+  const {date="desc",price} = searchParams
+  const priceOrder = price ? `| order(price${price})`:""
+  const dateOrder =date ?  `| order(_createdAt${date})`:""
   const order=`${priceOrder}${dateOrder}`
  // await seedSanityData()
  const products=await client.fetch<SanityProduct[]>(groq `*[_type == "product"] ${order}
