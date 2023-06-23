@@ -21,7 +21,7 @@ export default async function Page({searchParams}:Props) {
   const dateOrder =searchParams.date?  `| order(_createdAt${searchParams.date})`:""
   const order=`${priceOrder}${dateOrder}`
  // await seedSanityData()
- const products=await client.fetch<SanityProduct[]>(groq `*[_type == "product"] ${order}{
+ const products=await client.fetch<SanityProduct[]>(groq `*[_type == "product"] ${order}
  {
     _id,
     _createdAt,
