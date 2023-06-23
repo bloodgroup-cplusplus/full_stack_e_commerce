@@ -13,6 +13,8 @@ interface Props {}
 
 export default async function Page() {
  // await seedSanityData()
+ const products=await client.fetch<SanityProduct[]>(groq`*[_type == "product"]`)
+ console.log(products)
   return (
     <div>
       <div className="px-4 pt-20 text-center">
